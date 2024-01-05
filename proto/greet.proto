@@ -9,7 +9,7 @@ service GreetService {
 
     rpc HelloServerStream(NamesList) returns (stream HelloResponse) {}
 
-    rpc HellowClientStream(stream NamesList) returns (MessagesList) {}
+    rpc HellowClientStream(stream HelloRequest) returns (MessagesList) {}
 
     rpc HelloBiDirectionalStream(stream NamesList) returns (stream HelloResponse) {}
 }
